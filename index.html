@@ -12,31 +12,10 @@
                 line-height: .5;
                 border-radius: .2rem;
             }
-            ::-webkit-scrollbar {
-            width: 0px;
-            }
         </style>
     </head>
     <body>
-        <iframe width=100% id="flexible"
-            src="https://script.google.com/macros/s/AKfycbyeCT0e9PpUhTigf_6nddaKB1gnFT4gmqWktQkgGeEauINxl5Lj4h-wHuUefrWDrjk/exec"></iframe>
-        <script src="iframeResizer.js"></script>
-        <script>
-            window.addEventListener(
-                'message',
-                (event) => {
-                    if (event.data === 'gasFrame') {
-                        window.gasFrame = event.source;
-                        iFrameResize({
-                            log: false,
-                            checkOrigin: false
-                        }, '#flexible');
-                    }
-                },
-                false
-            );
-        </script>
-        
+        <iframe src="https://script.google.com/macros/s/AKfycbyeCT0e9PpUhTigf_6nddaKB1gnFT4gmqWktQkgGeEauINxl5Lj4h-wHuUefrWDrjk/exec" frameborder="0" width="100%" height="900px"></iframe>
         <!--<div class="container-fluid">
                 <form id="myForm" class="p-2 border border-light rounded bg-light">
                     <p class="h4 mb-4 text-center">Form Input Biaya</p>
